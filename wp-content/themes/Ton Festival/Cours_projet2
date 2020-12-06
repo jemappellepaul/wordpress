@@ -1,0 +1,69 @@
+page 404 : page d'erreur
+
+archive-gestion : 
+    get_header(); permet de faire appelle au fichier "header.php"
+    get_footer(); permet de faire appelle au fichier "footer.php"
+    if have_post : si la page contien des articles
+    the_post_thimbnail : récuperer la photo de mise en avant
+    get_field() : permet de récuperer un paramètre créer au préalable avec acf
+    the_permalink() : Affiche le lien permanent de la publication actuelle.
+
+footer.php :
+    wp_nav_menu ([paramètre]) : permet de récuperer un menu créer dans le tableau de bord.
+    wp_footer()0: "actionne" le footer
+
+front-page.php : Première page (page acceuil)
+    the_title() récuperer le titre de la page (peut etre gerer par l'ACF)
+    the_content() : contenu de la page
+    echo (get_post_type_archive_link) : lire le lien des archives des articles
+
+header.php
+    wp_head(): actionne le header
+    get_search_form(): permet de faire appelle au fichier "search_form"
+
+index.php : notre page type ou de "base"
+    the_date(): permet de recuperer la date 
+
+searchform.php : page contenant les fonctionalité de la formule de recherche
+    home_url(): Récupère l'URL du site actuel 
+    get_search_query(): Récupère le contenu de la variable de requête WordPress de recherche.
+
+single-gestion.php: page d'un seul artiste (GDAs plug-in)
+
+single-post.php: page d'un seul article.
+
+template-... .php : modèle de page 
+    les commentaire servent a identifier le template et de lui implater d'autre fonctionalité
+
+
+function.php : page regroupant beaucoup de fonctionalité
+    fonction TonFestival_supports() : permet d'ajouter des paramètres tel que le menu
+        add_theme_support: permet l'ajout d'une fonctionalité (ex: post-thumbnails)
+        register_nav_menu(): permet d'ajouter des display de menu
+    function TonFestival_register_assets():
+        wp_register_style():
+        wp_register_script():
+        wp_deregister_style():
+        wp_enqueue_script():
+    function TonFestival_menu_class():
+    add_filter():
+    function TonFestival_title_separator():
+    add_action():
+    require_once():
+
+sponso.php : metabox 
+    class SponsoMetaBox : 
+    const :
+    public static function register():
+    public static function add ():
+        current_user_can():
+        add_meta_box():
+    public static function render():
+        get_post_meta():
+        wp_nonce_field():
+    public static function save():
+        array_key_exists():
+        wp_verify_nonce():
+        delete_post_meta():
+        update_post_meta():
+
