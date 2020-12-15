@@ -14,8 +14,8 @@
 
     <!-- compte a reourd -->
 
-    <input type="button" value="détails">
-    <input type="button" value="billet">
+    <button type="button" value="détails">
+    <button type="button" value="billet">
     <p><?= the_field('intro'); ?></p>
     <p>Event starts: <?= the_field('start_date'); ?></p>
     <p>Event end: <?= the_field('end_date'); ?></p>
