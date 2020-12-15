@@ -5,8 +5,11 @@
  * template post type: page, archive-Gestion
  */
 ?>
+<div class="ticket_contener">
+    <?php get_header(); ?>
 
-<?php get_header(); ?>
+    <!-- Start the Loop. -->
+    <?php if (have_posts()): while ( have_posts()): the_post(); ?>
 
 <!-- Start the Loop. -->
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -108,6 +111,12 @@
             </div>
         </div>
 
+<<<<<<< HEAD
 <?php endwhile;
 endif; ?>
 <?php get_footer(); ?>
+=======
+
+
+            <?php get_footer(); ?>
+>>>>>>> 6cfa07652fc3ba8b5dda99572548e6075e8dfeca

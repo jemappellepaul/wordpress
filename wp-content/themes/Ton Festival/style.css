@@ -285,7 +285,7 @@ span.pink {
 
 .concerts {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     flex-direction: column;
     align-items: center;
     margin: 50px 0px 20px 0px;
@@ -293,15 +293,14 @@ span.pink {
 
 .contenant_concert {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: left;
     width: 55%;
 }
 
 .horaire {
     display: flex;
     justify-content: center;
-    margin: 10px 30px 10px 10px;
+    margin: 40px 30px 10px 10px;
     border-width: 5px;
     border-style: solid;
     border-image: linear-gradient(to left, rgb(28, 224, 214), rgb(219, 24, 187));
