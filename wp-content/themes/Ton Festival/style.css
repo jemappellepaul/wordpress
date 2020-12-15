@@ -9,3 +9,1685 @@ Requires PHP: 5.2.4
 Version: 1.0
 */
 
+p,
+a,
+span,
+div,
+h1,
+h2,
+li {
+    font-family: 'Myriad Pro', sans-serif;
+}
+
+ul.rs {
+    list-style-type: none;
+    color: white;
+}
+
+.white {
+    color: #e7e7e7;
+    font-size: 30px;
+}
+
+.pink {
+    color: #da1a90;
+    font-size: 30px;
+}
+
+#blanc {
+    color: white;
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 15px;
+}
+
+body {
+    margin: 0;
+}
+
+i.fa-calendar,
+i.fa-user {
+    margin: 0px 8px 0px 0px;
+}
+
+i.fa.fa-search {
+    margin: 0px -12px 0px 45px;
+}
+
+i.fa.fa-shopping-bag {
+    margin: -22px;
+}
+
+iframe {
+    position: absolute;
+    top: 40%;
+    left: 49%;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    border: none;
+    margin-top: 100px;
+}
+
+li a {
+    text-decoration: none;
+}
+
+
+/* Index */
+
+
+/* Menu */
+
+nav.index {
+    padding: 0;
+    margin: 15px 10px 10px 10px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+nav.index ul {
+    margin: 0px 10px 10px 10px;
+}
+
+
+/* liste du menu */
+
+nav.index li {
+    display: inline;
+    list-style: none;
+}
+
+nav.index img {
+    width: 2%;
+    height: 2%;
+}
+
+
+/* lien du Menu */
+
+nav.index a {
+    margin: 0 30px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* style bouton survoler */
+
+nav.index a:hover {
+    color: #654164;
+}
+
+nav.index img {
+    margin: 10px 0px 0px 10px;
+    color: white;
+}
+
+
+/* phrase d'intro */
+
+h1.title {
+    color: #30bca4;
+    text-align: center;
+    text-shadow: -0.03em -0.05em #da1a90;
+    font-size: 100px;
+    position: relative;
+    z-index: 1;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+/* compte a rebours */
+
+.block_index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+}
+
+.block_date {
+    display: flex;
+    justify-content: center;
+    margin-left: 15%;
+    margin: 30px 30px 30px 30px;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* chaque block du compte a rebours */
+
+div.block {
+    display: block;
+    position: relative;
+    /* margin: 0 10px; */
+    width: 110px;
+}
+
+
+/* block des jours */
+
+span.day {
+    color: white;
+    background-color: #da1a90;
+    font-weight: bold;
+    font-size: 15px;
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    left: 6px;
+    bottom: -12px;
+    padding: 5px 25px 5px 14px;
+}
+
+
+/* block des heures */
+
+span.clock {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+    ;
+    font-size: 40px;
+    text-align: center;
+    display: inline-block;
+    padding: 5px 0px 0px 0px;
+    width: 70px;
+    height: 60px;
+}
+
+
+/* boutons */
+
+.date_button_2 {
+    border-radius: 20px;
+    border: none;
+    padding: 12px 60px 12px 60px;
+    color: white;
+    background-color: #30bca4;
+    font-weight: bold;
+    margin: 50px 50px 50px 0px;
+}
+
+
+/* autre bouton */
+
+.date_button {
+    border-radius: 20px;
+    border: none;
+    padding: 12px 60px 12px 60px;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    margin: 50px 30px 50px 10px;
+}
+
+.block_date_button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 164px;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Calendrier */
+
+.img_son {
+    width: 80px;
+    height: 30px;
+}
+
+div.title_cal {
+    text-align: center;
+}
+
+
+/* Le menus des days */
+
+.button_calendrier {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 10px 10px 10px;
+}
+
+.button_calendrier button {
+    padding: 7px 80px 7px 80px;
+    color: white;
+    background-color: #101c2a;
+    border: none;
+}
+
+.button_calendrier button:hover {
+    background-color: #30bca4;
+}
+
+.horaire span.pink {
+    font-size: 15px;
+}
+
+span.pink {
+    color: #da1a90;
+}
+
+.date {
+    display: flex;
+    justify-content: center;
+}
+
+.date p {
+    color: #da1a90;
+    font-size: 20px;
+}
+
+.concerts {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0px 20px 0px;
+}
+
+.contenant_concert {
+    display: flex;
+    align-items: left;
+    width: 55%;
+}
+
+.horaire {
+    display: flex;
+    justify-content: center;
+    margin: 40px 30px 10px 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-image: linear-gradient(to left, rgb(28, 224, 214), rgb(219, 24, 187));
+    border-image-slice: 1;
+    align-items: center;
+    width: 320px;
+    height: 40px;
+}
+
+.text_concert {
+    display: flex;
+    flex-direction: column;
+}
+
+p.description,
+.artiste,
+.affiche_article {
+    color: white;
+}
+
+
+/* nom des concerts */
+
+h2.concert {
+    color: #30bca4;
+}
+
+#day_2 {
+    position: absolute;
+    visibility: hidden;
+    top: 1098px;
+}
+
+#day_1 {
+    visibility: unset;
+}
+
+#day_3 {
+    position: absolute;
+    visibility: hidden;
+    top: 1098px;
+}
+
+#day_4 {
+    position: absolute;
+    visibility: hidden;
+    top: 1098px;
+}
+
+.bouton_def {
+    display: flex;
+    justify-content: center;
+}
+
+.bouton_def button {
+    background-color: #02101c;
+    color: white;
+    font-weight: bold;
+    padding: 5px 7px 5px 7px;
+    margin: 0px 10px 80px 0px;
+    border: white 1px;
+    border-style: solid;
+}
+
+.bouton_def button:hover {
+    border-style: none;
+    background-color: #30bca4;
+}
+
+
+/* Ticket */
+
+.ticket_top {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* .ticket_top span {
+        color: #e7e7e7;
+    } */
+
+.ticket_title {
+    margin: 70px 0px 20px 0px;
+}
+
+.block_ticket {
+    display: flex;
+    justify-content: center;
+}
+
+.block_ticket button,
+button.follow {
+    border-radius: 20px;
+    border: none;
+    padding: 12px 30px 12px 30px;
+    color: white;
+    background-color: #30bca4;
+    font-weight: bold;
+    margin: 30px 0px 0px 0px;
+}
+
+.block_ticket button:hover,
+button.follow:hover {
+    box-shadow: 0px 0px 10px 6px #30bca4;
+}
+
+.block_ticket span {
+    margin: 0px 0px 20px 0px;
+}
+
+.ticket_contener {
+    background-color: #101c2a;
+}
+
+.ticket_color {
+    color: #e7e7e7;
+    margin: 0px 0px 10px 0px;
+}
+
+.prix {
+    color: #da1a90;
+    font-size: 50px;
+    font-weight: normal;
+}
+
+.free {
+    width: 250px;
+    margin: 90px 10px 90px 0px;
+    text-align: center;
+    border-right-color: #3f3f3f;
+    border-right-style: solid;
+    border-right-width: 1px;
+    padding: 20px 15px 20px 0px;
+}
+
+.silver {
+    width: 250px;
+    margin: 90px 10px 90px 10px;
+    text-align: center;
+    border-right-color: #3f3f3f;
+    border-right-style: solid;
+    border-right-width: 1px;
+    padding: 20px 15px 20px 0px;
+}
+
+.gold {
+    width: 250px;
+    margin: 90px 10px 90px 10px;
+    text-align: center;
+    border-right-color: #3f3f3f;
+    border-right-style: solid;
+    border-right-width: 1px;
+    padding: 20px 15px 20px 0px;
+}
+
+.vip {
+    width: 250px;
+    margin: 90px 0px 90px 10px;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+
+
+/* Têtes d'affiches */
+
+.milieu_page {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px 150px 20px 100px;
+}
+
+.contenant_page {
+    display: flex;
+    margin: 0px 80px;
+}
+
+.affiche_article {
+    margin: 0px 10px;
+    width: 100%
+}
+
+img.image {
+    width: 260px;
+    height: 365px;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+}
+
+.slider .image {
+    display: block;
+}
+
+.sur_image {
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+    height: 100%;
+    width: 71%;
+    transition: 1s ease;
+    font-size: 20px;
+    background: linear-gradient(to bottom left, rgb(28, 224, 214), rgb(228, 124, 210));
+}
+
+.sur_image p,
+.sur_image span {
+    margin: 40px 0px 15px 0px;
+}
+
+.sur_image:hover {
+    opacity: 0.5;
+}
+
+.rs_affiche {
+    /* distance entre chaque */
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.rs_affiche i {
+    margin: 10px 45px 0px -23px;
+}
+
+
+/* Follow */
+
+.body_follow {
+    background-image: url(../images/FKJ.jpg);
+    padding: 150px 0px 150px 150px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Blog */
+
+.body_blog {
+    background-color: #02101c;
+}
+
+.body_blog h2 {
+    color: #30bca4;
+}
+
+.top_blog {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.text_title_blog {
+    color: #e7e7e7;
+    margin: 0px 0px 40px 0px;
+}
+
+.blog_title {
+    margin: 80px 0px 30px 0px;
+}
+
+.block_blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog_1 {
+    width: 60%;
+    padding: 40px;
+    background-color: #101c2a;
+    margin: 30px 0px 0px 0px;
+}
+
+.blog_1 span {
+    color: #d2d2d2;
+}
+
+.blog_1 p {
+    color: #d2d2d2;
+}
+
+.blog_2 {
+    width: 60%;
+    padding: 40px;
+}
+
+.blog_2 span {
+    color: #d2d2d2;
+}
+
+.blog_2 p {
+    color: #d2d2d2;
+}
+
+.blog_3 {
+    width: 60%;
+    padding: 40px;
+    background-image: url(../images/FKJ.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.blog_3 span {
+    color: #d2d2d2;
+}
+
+.blog_3 p {
+    color: #d2d2d2;
+}
+
+.blog_4 {
+    width: 60%;
+    padding: 40px;
+    margin-bottom: 50px;
+}
+
+.blog_4 span {
+    color: #d2d2d2;
+}
+
+.blog_4 p {
+    color: #d2d2d2;
+}
+
+.autor {
+    margin: 0px 0px 20px 40px;
+}
+
+
+/* Affiche */
+
+.top_affiche {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* Album / Footer */
+
+
+/* Album */
+
+.album {
+    display: flex;
+    flex-direction: row;
+}
+
+.colum {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.colum img {
+    width: 100%;
+}
+
+.image_1 {
+    height: 250px;
+}
+
+.image_2 {
+    height: 230px;
+}
+
+.colum_2 {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.image_3 {
+    height: 440px;
+}
+
+.image_4 {
+    height: 290px;
+}
+
+.colum_3 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.colum_4 {
+    display: flex;
+    flex-direction: row;
+}
+
+.image_5 {
+    width: 50%;
+    height: 260px;
+}
+
+.image_6 {
+    height: 470px;
+}
+
+
+/* Top footer */
+
+.block_top_footer {
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+}
+
+.contact {
+    width: 260px;
+    margin: 50px 20px 40px 20px;
+    color: #4d4d4d;
+}
+
+.contact h2 {
+    color: #d2d2d2;
+    font-size: 19px;
+}
+
+.twitter {
+    width: 260px;
+    margin: 50px 20px 40px 20px;
+    color: #4d4d4d;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.twitter h2 {
+    color: #d2d2d2;
+    font-size: 19px;
+}
+
+.twitter li a,
+.twitter li a:visited {
+    text-decoration: none;
+    color: #30bca4;
+}
+
+.instagram {
+    width: 260px;
+    margin: 50px 20px 40px 20px;
+    color: #4d4d4d;
+}
+
+.instagram h2 {
+    color: #d2d2d2;
+    font-size: 19px;
+}
+
+.image_insta {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image_insta img {
+    width: 75px;
+    height: 75px;
+    margin: 5px;
+}
+
+.newsletter {
+    width: 260px;
+    margin: 50px 20px 40px 20px;
+    color: #4d4d4d;
+}
+
+.newsletter h2 {
+    color: #d2d2d2;
+    font-size: 19px;
+}
+
+.newsletter input {
+    width: 200px;
+    height: 40px;
+    background-color: #292929;
+    color: white;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.newsletter ::placeholder {
+    color: #747474;
+}
+
+.newsletter button {
+    border-radius: 20px;
+    border: none;
+    padding: 12px 30px 12px 30px;
+    color: white;
+    background-color: #30bca4;
+    font-weight: bold;
+}
+
+
+/* Bot Footer */
+
+.block_bot_footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #020f1d;
+}
+
+.footer_reseaux {
+    margin: 25px 220px 0px 0px;
+    color: white;
+}
+
+.copyright {
+    color: white;
+    margin: 20px 0px 20px 60px;
+}
+
+.footer_logo {
+    margin: 20px 0px 20px 250px;
+}
+
+ul.rs {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_reseaux ul.rs li a {
+    text-decoration: none;
+    margin: 50px 10px 0px 10px;
+    border: white 1px;
+    border-style: solid;
+    padding: 5px 5px 5px 5px;
+    color: white;
+}
+
+.footer_reseaux ul.rs li a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.footer_reseaux ul.rs li a:hover {
+    text-decoration: none;
+    background-color: #da1a90;
+    color: white;
+    border: none;
+}
+
+.footer_logo img {
+    width: 50px;
+    height: 50px;
+}
+
+@media all and (max-width: 1350px) {
+    .milieu_page {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 50px 80px 20px 30px;
+    }
+    .sur_image {
+        position: absolute;
+        top: 0px;
+        opacity: 0;
+        height: 100%;
+        width: 100%;
+        transition: 1s ease;
+        font-size: 14px;
+        background: linear-gradient(to bottom left, rgb(28, 224, 214), rgb(228, 124, 210));
+    }
+    .slider {
+        position: relative;
+        width: 100%;
+        margin: 10px;
+    }
+    img.image {
+        width: 15px;
+        height: 182.5px;
+    }
+    .sur_image p,
+    .sur_image span {
+        margin: 0px 0px 15px 0px;
+        font-size: 8px;
+    }
+    .affiche_article {
+        margin: 0px 10px;
+        width: 100%;
+        font-size: 8px;
+    }
+}
+
+@media all and (max-width: 1100px) {
+    .footer_logo {
+        margin: 20px 0px 20px 150px;
+    }
+    .footer_reseaux {
+        margin: 25px 150px 0px 0px;
+        color: white;
+    }
+    nav.index a {
+        margin: 0 10px;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+    }
+    i.fa.fa-search {
+        margin: 0px 10px 0px 0px;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .album {
+        display: flex;
+        flex-direction: row;
+        height: 500px;
+    }
+    .image_1 {
+        height: 175px;
+    }
+    .image_2 {
+        height: 150px;
+    }
+    .image_3 {
+        height: 300px;
+    }
+    .image_4 {
+        height: 200px;
+    }
+    .image_5 {
+        width: 50%;
+        height: 180px;
+    }
+    .image_6 {
+        height: 320px;
+    }
+    .footer_logo {
+        margin: 20px 0px 20px 100px;
+    }
+    .copyright {
+        color: white;
+        margin: 20px 0px 20px 40px;
+    }
+    .footer_reseaux {
+        margin: 25px 100px 0px 0px;
+        color: white;
+    }
+}
+
+@media all and (max-width: 875px) {
+    .image_insta img {
+        width: 60px;
+        height: 60px;
+        margin: 5px;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .image_insta img {
+        width: 55px;
+        height: 55px;
+        margin: 5px;
+    }
+    .footer_logo {
+        margin: 20px 0px 20px 60px;
+    }
+    .footer_logo img {
+        width: 30px;
+        height: 30px;
+    }
+    .copyright {
+        color: white;
+        margin: 20px 0px 20px 30px;
+        font-size: 12px;
+    }
+    .footer_reseaux {
+        margin: 10px 60px 0px 0px;
+        color: white;
+    }
+    .footer_reseaux ul.rs li a {
+        text-decoration: none;
+        margin: 50px 5px 0px 5px;
+        border: white 1px;
+        border-style: solid;
+        padding: 5px 5px 5px 5px;
+        color: white;
+    }
+}
+
+@media all and (max-width: 751px) {
+    nav.index a {
+        margin: 0 5px;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    i.fa.fa-search {
+        margin: 0px 20px 0px 0px;
+    }
+    nav.index ul {
+        margin: 0px 10px 10px 10px;
+        padding: 0;
+    }
+    .ticket_top {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 500px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .button_calendrier button {
+        padding: 7px 60px 7px 60px;
+        color: white;
+        background-color: #101c2a;
+        border: none;
+    }
+    .prix {
+        color: #da1a90;
+        font-size: 30px;
+        font-weight: normal;
+    }
+    .free {
+        width: 200px;
+        margin: 80px 10px 80px 0px;
+        text-align: center;
+        border-right-color: #3f3f3f;
+        border-right-style: solid;
+        border-right-width: 1px;
+        padding: 20px 15px 20px 0px;
+    }
+    .silver {
+        width: 200px;
+        margin: 80px 10px 80px 10px;
+        text-align: center;
+        border-right-color: #3f3f3f;
+        border-right-style: solid;
+        border-right-width: 1px;
+        padding: 20px 15px 20px 0px;
+    }
+    .gold {
+        width: 200px;
+        margin: 80px 10px 80px 10px;
+        text-align: center;
+        border-right-color: #3f3f3f;
+        border-right-style: solid;
+        border-right-width: 1px;
+        padding: 20px 15px 20px 0px;
+    }
+    .vip {
+        width: 200px;
+        margin: 80px 0px 80px 10px;
+        text-align: center;
+        padding: 20px 0px 20px 0px;
+    }
+    .contenant_page {
+        display: flex;
+        margin: 0px 40px;
+    }
+    .affiche_article {
+        margin: 10px 10px;
+        width: 100%
+    }
+    .body_follow {
+        background-image: url(../images/FKJ.jpg);
+        padding: 70px 0px 150px 70px;
+        background-size: cover;
+        background-position: center;
+    }
+    .contact {
+        width: 220px;
+        margin: 50px 20px 40px 20px;
+        color: #4d4d4d;
+    }
+    .contact p {
+        font-size: 12px;
+    }
+    .contact h2 {
+        color: #d2d2d2;
+        font-size: 15px;
+    }
+    .twitter {
+        width: 220px;
+        margin: 50px 20px 40px 20px;
+        color: #4d4d4d;
+        text-decoration: none;
+        list-style-type: none;
+    }
+    .twitter h2 {
+        color: #d2d2d2;
+        font-size: 15px;
+    }
+    .twitter p {
+        font-size: 12px;
+    }
+    .twitter li a,
+    .twitter li a:visited {
+        text-decoration: none;
+        color: #30bca4;
+        font-size: 12px;
+    }
+    .instagram {
+        width: 220px;
+        margin: 50px 20px 40px 20px;
+        color: #4d4d4d;
+    }
+    .instagram h2 {
+        color: #d2d2d2;
+        font-size: 15px;
+    }
+    .image_insta img {
+        width: 45px;
+        height: 45px;
+        margin: 5px;
+    }
+    .newsletter {
+        width: 220px;
+        margin: 50px 20px 40px 20px;
+        color: #4d4d4d;
+    }
+    .newsletter h2 {
+        color: #d2d2d2;
+        font-size: 15px;
+    }
+    .newsletter input {
+        width: 180px;
+        height: 35px;
+        background-color: #292929;
+        border: none;
+        margin-bottom: 25px;
+    }
+    .newsletter button {
+        border-radius: 20px;
+        border: none;
+        padding: 10px 25px 10px 25px;
+        color: white;
+        background-color: #30bca4;
+        font-weight: bold;
+    }
+}
+
+@media all and (max-width: 620px) {
+    nav.index a {
+        margin: 0 5px;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+        font-size: 13px;
+    }
+    i.fa.fa-search {
+        margin: 0px 20px 0px 0px;
+    }
+    #white {
+        color: #e7e7e7;
+        font-size: 25px;
+    }
+    #pink {
+        color: #da1a90;
+        font-size: 25px;
+    }
+    .milieu_page {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 50px 70px 20px 30px;
+    }
+    .contenant_page {
+        display: flex;
+        margin: 0;
+    }
+    .affiche_article {
+        margin: 0px 20px 0px 0px;
+        width: 100%
+    }
+    .body_follow {
+        background-image: url(../images/FKJ.jpg);
+        padding: 50px 0px 150px 50px;
+        background-size: cover;
+        background-position: center;
+    }
+    .body_follow p {
+        font-size: 12px;
+    }
+    .top_blog {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 500px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .blog_1 {
+        width: 35%;
+        padding: 40px;
+        background-color: #101c2a;
+        margin: 30px 0px 0px 0px;
+    }
+    .blog_2 {
+        width: 35%;
+        padding: 40px;
+    }
+    .blog_3 {
+        width: 35%;
+        padding: 40px;
+        background-image: url(../images/FKJ.jpg);
+        background-repeat: no-repeat;
+        background-size: 300%;
+    }
+    .blog_4 {
+        width: 35%;
+        padding: 40px;
+        margin-bottom: 50px;
+    }
+    .album {
+        display: flex;
+        flex-direction: row;
+        height: 250px;
+    }
+    .image_1 {
+        height: 87.5px;
+    }
+    .image_2 {
+        height: 75px;
+    }
+    .image_3 {
+        height: 150px;
+    }
+    .image_4 {
+        height: 100px;
+    }
+    .image_5 {
+        width: 50%;
+        height: 90px;
+    }
+    .image_6 {
+        height: 160px;
+    }
+    .contact {
+        width: 180px;
+        margin: 50px 20px 40px 20px;
+        color: #4d4d4d;
+    }
+    .contact p {
+        font-size: 8px;
+    }
+    .contact h2 {
+        color: #d2d2d2;
+        font-size: 10px;
+    }
+    .twitter {
+        width: 180px;
+        margin: 50px 20px 40px 20px;
+        color: #4d4d4d;
+        text-decoration: none;
+        list-style-type: none;
+    }
+    .twitter h2 {
+        color: #d2d2d2;
+        font-size: 10px;
+    }
+    .twitter p {
+        font-size: 8px;
+    }
+    .twitter li a,
+    .twitter li a:visited {
+        text-decoration: none;
+        color: #30bca4;
+        font-size: 8px;
+    }
+    .instagram {
+        width: 180px;
+        margin: 50px 20px 40px 20px;
+        color: #4d4d4d;
+    }
+    .instagram h2 {
+        color: #d2d2d2;
+        font-size: 10px;
+    }
+    .image_insta img {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+    }
+    .newsletter {
+        width: 180px;
+        margin: 50px 20px 40px 20px;
+        color: #4d4d4d;
+    }
+    .newsletter h2 {
+        color: #d2d2d2;
+        font-size: 10px;
+    }
+    .newsletter p {
+        font-size: 8px;
+    }
+    .newsletter input {
+        width: 150px;
+        height: 30px;
+        background-color: #292929;
+        border: none;
+        margin-bottom: 25px;
+    }
+    .newsletter ::placeholder {
+        color: #747474;
+        font-size: 10px;
+    }
+    .newsletter button {
+        border-radius: 20px;
+        border: none;
+        padding: 8px 20px 8px 20px;
+        color: white;
+        background-color: #30bca4;
+        font-weight: bold;
+        font-size: 8px;
+    }
+    .image_insta img {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+    }
+    .footer_logo {
+        margin: 30px 0px 20px 30px;
+    }
+    .footer_logo img {
+        width: 25px;
+        height: 25px;
+    }
+    .copyright {
+        color: white;
+        margin: 30px 0px 20px 15px;
+        font-size: 10px;
+    }
+    .footer_reseaux {
+        margin: 20px 0px 0px 0px;
+        color: white;
+        width: 200px;
+    }
+    .footer_reseaux ul.rs li a {
+        text-decoration: none;
+        margin: 0px 5px 0px 5px;
+        border: white 1px;
+        border-style: solid;
+        padding: 5px 5px 5px 5px;
+        color: white;
+    }
+}
+
+@media all and (max-width: 570px) {
+    h1.title {
+        color: #30bca4;
+        text-align: center;
+        text-shadow: -0.03em -0.05em #da1a90;
+        font-size: 60px;
+        font-family: 'Dancing Script', cursive;
+    }
+    .date_button_2 {
+        border-radius: 20px;
+        border: none;
+        padding: 8px 40px 8px 40px;
+        color: white;
+        background-color: #30bca4;
+        font-weight: bold;
+        margin: 20px 50px 20px 0px;
+        font-size: 12px;
+    }
+    /* autre bouton */
+    .date_button {
+        border-radius: 20px;
+        border: none;
+        padding: 8px 40px 8px 40px;
+        color: white;
+        background-color: black;
+        font-weight: bold;
+        margin: 20px 30px 20px 10px;
+        font-size: 12px;
+    }
+    .button_calendrier button {
+        padding: 5px 30px 5px 30px;
+        color: white;
+        background-color: #101c2a;
+        border: none;
+        font-size: 12px;
+    }
+    .horaire span.pink {
+        font-size: 12px;
+    }
+    .date p {
+        font-size: 12px;
+    }
+    .text_concert {
+        font-size: 12px;
+    }
+    .ticket_top {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 350px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #white {
+        color: #e7e7e7;
+        font-size: 20px;
+    }
+    #blanc {
+        color: white;
+        font-family: 'Myriad Pro', sans-serif;
+        font-size: 13px;
+    }
+    #pink {
+        color: #da1a90;
+        font-size: 20px;
+    }
+    .img_son {
+        width: 50px;
+        height: 20px;
+    }
+    .prix {
+        color: #da1a90;
+        font-size: 30px;
+        font-weight: normal;
+    }
+    .free {
+        width: 120px;
+        margin: 60px 10px 60px 0px;
+        text-align: center;
+        border-right-color: #3f3f3f;
+        border-right-style: solid;
+        border-right-width: 1px;
+        padding: 20px 15px 20px 0px;
+        font-size: 12px;
+    }
+    .silver {
+        width: 120px;
+        margin: 60px 10px 60px 10px;
+        text-align: center;
+        border-right-color: #3f3f3f;
+        border-right-style: solid;
+        border-right-width: 1px;
+        padding: 20px 15px 20px 0px;
+        font-size: 12px;
+    }
+    .gold {
+        width: 120px;
+        margin: 60px 10px 60px 10px;
+        text-align: center;
+        border-right-color: #3f3f3f;
+        border-right-style: solid;
+        border-right-width: 1px;
+        padding: 20px 15px 20px 0px;
+        font-size: 12px;
+    }
+    .vip {
+        width: 120px;
+        margin: 60px 0px 60px 10px;
+        text-align: center;
+        padding: 20px 0px 20px 0px;
+        font-size: 12px;
+    }
+    .block_ticket button,
+    button.follow {
+        border-radius: 20px;
+        border: none;
+        padding: 8px 20px 8px 20px;
+        color: white;
+        background-color: #30bca4;
+        font-weight: bold;
+        margin: 20px 0px 0px 0px;
+    }
+}
+
+@media all and (max-width: 540px) {
+    .milieu_page {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 50px 80px 20px 30px;
+    }
+    .sur_image {
+        position: absolute;
+        top: 0px;
+        opacity: 0;
+        height: 84%;
+        width: 100%;
+        transition: 1s ease;
+        font-size: 12px;
+        background: linear-gradient(to bottom left, rgb(28, 224, 214), rgb(228, 124, 210));
+    }
+    .sur_image ul.rs_affiche {
+        margin: 0;
+        padding: 0;
+    }
+    i.fa.fa-facebook {
+        margin: 6px;
+    }
+    i.fa.fa-twitter {
+        margin: 6px;
+    }
+    i.fa.fa-instagram {
+        margin: 6px;
+    }
+    i.fa.fa-github {
+        margin: 6px;
+    }
+    .slider {
+        position: relative;
+        width: 100%;
+        margin: 10px;
+    }
+    img.image {
+        width: 90px;
+        height: 120px;
+    }
+    .sur_image p,
+    .sur_image span {
+        margin: 0px 0px 15px 0px;
+        font-size: 5.5px;
+    }
+    .affiche_article {
+        margin: 0px 10px;
+        width: 100%;
+        font-size: 8px;
+    }
+    .footer_reseaux ul.rs {
+        padding: 0;
+        margin-left: 5px;
+    }
+    .footer_reseaux ul.rs li a {
+        text-decoration: none;
+        margin: 0px 2px 0px 2px;
+        border: white 1px;
+        border-style: solid;
+        padding: 3px 0px 3px 0px;
+        color: white;
+    }
+}
+
+@media all and (max-width: 440px) {
+    span.day {
+        color: white;
+        background-color: #da1a90;
+        font-weight: bold;
+        font-size: 10px;
+        position: absolute;
+        display: block;
+        text-align: center;
+        width: 10px;
+        left: 6px;
+        bottom: -12px;
+        padding: 5px 15px 5px 15px;
+    }
+    span.clock {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.75);
+        ;
+        font-size: 25px;
+        text-align: center;
+        display: block;
+        padding: 5px 0px 0px 0px;
+        width: 50px;
+        height: 40px;
+    }
+    .prix {
+        color: #da1a90;
+        font-size: 20px;
+        font-weight: normal;
+    }
+    .free {
+        width: 80px;
+        margin: 40px 10px 40px 0px;
+        text-align: center;
+        border-right-color: #3f3f3f;
+        border-right-style: solid;
+        border-right-width: 1px;
+        padding: 15px 10px 15px 0px;
+        font-size: 10px;
+    }
+    .silver {
+        width: 80px;
+        margin: 40px 10px 40px 10px;
+        text-align: center;
+        border-right-color: #3f3f3f;
+        border-right-style: solid;
+        border-right-width: 1px;
+        padding: 15px 10px 15px 0px;
+        font-size: 10px;
+    }
+    .gold {
+        width: 80px;
+        margin: 40px 10px 40px 10px;
+        text-align: center;
+        border-right-color: #3f3f3f;
+        border-right-style: solid;
+        border-right-width: 1px;
+        padding: 15px 10px 15px 0px;
+        font-size: 10px;
+    }
+    .vip {
+        width: 80px;
+        margin: 40px 0px 40px 10px;
+        text-align: center;
+        padding: 15px 0px 10px 0px;
+        font-size: 10px;
+    }
+    .block_ticket button,
+    button.follow {
+        border-radius: 20px;
+        border: none;
+        padding: 5px 15px 5px 15px;
+        color: white;
+        background-color: #30bca4;
+        font-weight: bold;
+        margin: 20px 0px 0px 0px;
+        font-size: 10px;
+    }
+    .top_blog {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .blog_1 {
+        width: 50%;
+        padding: 20px;
+        background-color: #101c2a;
+        margin: 20px 0px 0px 0px;
+    }
+    .blog_2 {
+        width: 50%;
+        padding: 20px;
+    }
+    .blog_3 {
+        width: 50%;
+        padding: 20px;
+        background-image: url(../images/FKJ.jpg);
+        background-repeat: no-repeat;
+        background-size: 400%;
+    }
+    .blog_4 {
+        width: 50%;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .contact {
+        width: 200px;
+        margin: 20px 5px 5px 5px;
+        color: #4d4d4d;
+    }
+    .twitter {
+        width: 200px;
+        margin: 20px 5px 5px 5px;
+        color: #4d4d4d;
+        text-decoration: none;
+        list-style-type: none;
+    }
+    .instagram {
+        width: 200px;
+        margin: 20px 5px 5px 5px;
+        color: #4d4d4d;
+    }
+    .image_insta img {
+        width: 20px;
+        height: 20px;
+        margin: 3px;
+    }
+    .newsletter {
+        width: 200px;
+        margin: 20px 5px 5px 5px;
+        color: #4d4d4d;
+    }
+}
