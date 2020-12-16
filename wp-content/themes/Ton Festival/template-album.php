@@ -10,40 +10,89 @@
 
 <!-- Start the Loop. -->
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+        <p><?php the_content(); ?></p>
+        <!-- Page album -->
+        <div id="ticket" class="ticket_contener">
+            <div class="ticket_top">
+                <div class="ticket_title">
+                    <!-- titre de la page -->
+                    <img class="img_son" src="<?php the_post_thumbnail_url(); ?>" alt="">
+                    <span class="white"><?php the_field('titre_de_la_page') ?> </span>
+                    <span class="pink"><?php the_field('second_titre') ?></span>
+                    <img class="img_son" src="<?php the_post_thumbnail_url(); ?>" alt="">
+                    <!-- phrase d'intro -->
+                    <span><?php the_field('intro') ?></span>
+                    <div id="album" class="album">
+                        <div class="colum">
+                            <!-- première colonne -->
+                            <!-- Début de la boucle -->
+                            <?php if (get_field('images')) : ?>
+                                <!-- condition sous groupe -->
+                                <?php while (has_sub_field('images')) : ?>
+                                    <!-- premiere image -->
+                                    <img class="image_1" src="<?php echo esc_url('image_1'['url']); ?>" alt="">
+                                    <!-- deuxième image -->
+                                    <img class="image_2" src="<?php the_field('image_2'); ?>" alt="">
+                                    <!-- troisème image -->
+                                    <img class="image_1" src="<?php echo wp_get_attachment_image('image_3'); ?>" alt="">
+                                    </div>
+                                    <?php endwhile;
+                            else :
+                                // si erreur affiche 'rien'
+                                echo ('notthing');
+                            endif; ?>
+                            <!-- deuxième colonne -->
+                            <div class="colum_2">
+                             <!-- Début de la boucle -->
+                             <?php if (get_field('images')) : ?>
+                                <!-- condition sous groupe -->
+                                <?php while (has_sub_field('images')) : ?>
+                                    <!-- premiere image -->
+                                    <img class="image_3" src="<?php the_sub_field('image_4'); ?>" alt="">
+                                    <!-- deuxième image -->
+                                    <<img class="image_4" src="<?php the_sub_field('image_5'); ?>" alt="">
+                                    </div>
+                                    <?php endwhile;
+                            else :
+                                // si erreur affiche 'rien'
+                                echo ('notthing');
+                            endif; ?>
+                            <!-- Troisième colonne -->
+                            <div class="colum_3">
+                             <div class="colum_4">
+                             <!-- Début de la boucle -->
+                             <?php if (get_field('images')) : ?>
+                                <!-- condition sous groupe -->
+                                <?php while (has_sub_field('images')) : ?>
+                                    <!-- premiere image -->
+                                    <img class="image_3" src="<?php the_sub_field('image_6'); ?>" alt="">
+                                    <!-- deuxième image -->
+                                    <<img class="image_4" src="<?php the_sub_field('image_7'); ?>" alt="">
+                                    </div>
+                                    </div>
+                                    <?php endwhile;
+                            else :
+                                // si erreur affiche 'rien'
+                                echo ('notthing');
+                            endif; ?>
+                        </div>
+                         <!-- Quatrième colonne -->
+                             <!-- Début de la boucle -->
+                             <?php if (get_field('images')) : ?>
+                                <!-- condition sous groupe -->
+                                <?php while (has_sub_field('images')) : ?>
+                                    <!-- premiere image -->
+                                    <img class="image_6" src="<?php the_sub_field('image_8'); ?>" alt="">
+                                    </div>
+                                    <?php endwhile;
+                            else :
+                                // si erreur affiche 'rien'
+                                echo ('notthing');
+                            endif; ?>
+                    </div>
+                </div>
 
-        <h1><?php the_field('titre_de_la_page'); ?></h1>
-        <h3><?php the_field('intro_page'); ?></h3>
-        <p>
-            <img src="<?php the_post_thumbnail_url(); ?>" alt="">
-            <?php the_content(); ?>
-        </p>
-        <!-- première image -->
-        <div><img href="<?php the_field('images'); ?>" alt="photo_album">
-            <!-- deuxième image -->
-            <?php the_field('image_2'); ?>
-
-            <!-- troisième image -->
-
-            <!-- quatrième image -->
-            <?php the_post_thumbnail_url('image4'); ?>
-            <!-- cinquième image -->
-            <?php get_field_object('image_1'); ?>
-            <img src="<?php if (get_field('images'));
-foreach (get_field('images') as $image);
-the_field($image); ?>" alt="">
-            <!-- sixième image -->
-            <?php the_field('image6'); ?>
-            <!-- septième image -->
-            <?php the_field('image7'); ?>
-            <!-- dernière image -->
-            <?php the_field('image8'); ?></div>
-
-
-
-<?php endwhile;
+        <?php endwhile;
 endif; ?>
-<?php if (get_field('images'));
-foreach (get_field('images') as $image);
-the_field($image); ?>
 
-<?php get_footer(); ?>
+        <?php get_footer(); ?>

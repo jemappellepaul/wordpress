@@ -8,9 +8,6 @@
 <div class="ticket_contener">
     <?php get_header(); ?>
 
-    <!-- Start the Loop. -->
-    <?php if (have_posts()): while ( have_posts()): the_post(); ?>
-
 <!-- Start the Loop. -->
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     <p><?php the_content(); ?></p>
@@ -19,10 +16,10 @@
             <div class="ticket_top">
                 <div class="ticket_title">
                     <!-- titre de la page -->
-                    <img class="img_son" src="Images/photo_son_2.jpg" alt="">
+                    <img class="img_son" src="<?php the_post_thumbnail_url(); ?>" alt="">
                     <span class="white"><?php the_field('titre_de_la_page') ?> </span>
                     <span class="pink"><?php the_field('second_titre') ?></span>
-                    <img class="img_son" src="Images/photo_son_2.jpg" alt="">
+                    <img class="img_son" src="<?php the_post_thumbnail_url(); ?>" alt="">
                 </div>
                 <!-- phrase d'intro -->
                 <span><?php the_field('intro') ?></span>
@@ -111,12 +108,7 @@
             </div>
         </div>
 
-<<<<<<< HEAD
 <?php endwhile;
 endif; ?>
+
 <?php get_footer(); ?>
-=======
-
-
-            <?php get_footer(); ?>
->>>>>>> 6cfa07652fc3ba8b5dda99572548e6075e8dfeca

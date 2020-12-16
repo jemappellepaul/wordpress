@@ -13,7 +13,7 @@
             <h5 class="card-title"><?= get_field('nom_de_lartiste');?></h5>
             <h6 class="card-subtitle mb-2 text-muted"><?php the_category(); ?></h6>
             <p class="card-text"><?= get_field('description');?></p>
-            <a href="<?php the_permalink(); ?>" class="card-link">Voir plus</a>
+            <a href="<?php the_permalink(); ?>" class="card-link">Oui</a>
           </div>
         </div>
       </div>

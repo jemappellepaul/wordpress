@@ -18,7 +18,8 @@
                 echo ('notthing');
             endif; ?>
         </div>
-        <h2 style="color : white;"><?php if (have_rows('premiere_colonne')) : ?>
+        <h2 style="color : white;">
+        <?php if (have_rows('premiere_colonne')) : ?>
                 <ul>
                     <?php while (have_rows('premiere_colonne')) : the_row(); ?>
                         <li><?php the_sub_field('contenu'); ?></li>
@@ -27,27 +28,15 @@
             <?php else : ?>
                 <p>No todos found</p>
             <?php endif; ?></h2>
+            <div class="contact" style="color: white;">
+            <h1><?php get_field('contenu'); ?></h1></div>
+
             <!-- menu pied de page (politique)-->
         <?php wp_nav_menu([
             'theme_location' => 'footer',
             'container' => false,
             'menu_class' => 'block_top_footer'
         ]); ?>
-<<<<<<< HEAD
-=======
-        <?php the_field('contenu'); ?>
-
-        <h1 style="color : white;"><?php if (have_rows('premiere_colonne')) :
-                while (have_rows('premiere_colonne')) : the_row();
-                    $sub_value = get_sub_field('contenu');
-                // Do something...
-                endwhile;
-            else :
-            // no rows found
-            echo ('nothing');
-            endif; ?></h1>
-            
->>>>>>> 6cfa07652fc3ba8b5dda99572548e6075e8dfeca
     </div>
     </body>
 

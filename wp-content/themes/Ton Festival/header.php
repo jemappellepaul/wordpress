@@ -13,9 +13,7 @@
     <title>TON FESTIVAL</title>
 </head>
 <!-- Corps HTML -->
-<body>
-
-    <div class="index">
+<body class="index">
         <!-- header -->
         <header>
             <!-- Menu-->

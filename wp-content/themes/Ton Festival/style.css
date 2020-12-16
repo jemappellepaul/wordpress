@@ -75,6 +75,10 @@ li a {
 
 /* Index */
 
+body.index {
+    background-color: #02101c;
+}
+
 
 /* Menu */
 
@@ -551,7 +555,7 @@ img.image {
     background-color: #02101c;
 }
 
-.body_blog h2 {
+h2.titre_publication {
     color: #30bca4;
 }
 
